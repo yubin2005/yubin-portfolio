@@ -93,8 +93,9 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleMenu() {
         const menu = document.getElementById("mobileMenu");
         const hamburger = document.querySelector(".hamburger");
-    
-        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        
+        menu.classList.toggle("show");
         hamburger.classList.toggle("active");
     }
+    
 });
