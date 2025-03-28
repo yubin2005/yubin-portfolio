@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yubin Li | Contact</title>
+  
+  <!-- Icons and Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Your main CSS file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="custom-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="message.html">Message</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <div class="contact-container">
+      <h1 class="contact-title">Get in Touch</h1>
+      <div class="message-container">
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/xvgkbarg"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              required
+              placeholder="Your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea
+              class="form-textarea"
+              name="message"
+              required
+              placeholder="Your message..."
+              rows="4"
+            ></textarea>
+          </div>
+
+          <!-- Honeypot for bots -->
+          <input type="text" name="_gotcha" style="display: none" />
+
+          <!-- Submit Button -->
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+
+          <!--  Added status message element -->
+          <div id="statusMessage" class="status-message" style="display: none;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yubin Li. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Your JS logic -->
+  <script src="scripts.js"></script>
+</body>
+</html>
