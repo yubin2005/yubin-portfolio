@@ -89,4 +89,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initialize effects
     typingEffect();
+
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        const hamburger = document.querySelector(".hamburger");
+    
+        menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+        hamburger.classList.toggle("active");
+    }
 });
