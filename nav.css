@@ -1,0 +1,32 @@
+.custom-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.custom-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom-nav ul li {
+  display: inline-block;
+}
+.custom-nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.custom-nav ul li a:hover {
+  background: #007acc;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

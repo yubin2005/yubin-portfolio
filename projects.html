@@ -5,29 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yubin Li | Resume</title>
-    <!-- Latest Font Awesome CSS Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="yubin.png">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="sections.css"> 
+    <link rel="stylesheet" href="projects.css"> 
 </head>
 
 <body>
-    <!-- Hamburger Menu for Mobile -->
-  <div class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="mobile-menu">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="message.html">Message</a>
-  </div>
-    
-    <!-- Navigation Bar -->
     <nav class="custom-nav">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -37,9 +25,54 @@
         </ul>
     </nav>
 
+    <section id="projects" class="projects-section">
+      <h2 class="sr-only">Projects</h2>
+      <div class="projects-grid">
     
+        <a href="https://github.com/yubin2005/AutoSquatCounter-main"
+           class="project-card"
+           target="_blank"
+        >
+          <div class="card-content">
+            <img
+              src="myself.png"
+              alt="Auto Squat Counter preview"
+              class="project-thumb"
+            />
+            <div class="text-block">
+              <h3 class="project-name">Auto Squat Counter</h3>
+              <p class="project-desc">
+                Real-time squat detection and rep counting using <strong>MediaPipe</strong>, <strong>OpenCV</strong>,
+                and custom angle-tracking logic.
+              </p>
+            </div>
+          </div>
+        </a>
+    
+        <a href="https://github.com/yubin2005/Rhythmix"
+           class="project-card"
+           target="_blank"
+        >
+          <div class="card-content">
+            <img
+              src="Rhythmix.png"
+              alt="Rhythmix UI preview"
+              class="project-thumb"
+            />
+            <div class="text-block">
+              <h3 class="project-name">Rhythmix</h3>
+              <p class="project-desc">
+                An <strong>Gemini API</strong> music web app built on <strong>Firebase</strong> that lets users upload MP3s, search by mood, and instantly generate personalized playlists.
+              </p>
+            </div>
+          </div>
+        </a>
+    
+      </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Yubin Li. All Rights Reserved.</p>
+      <p> Made with ❤️ by Yubin.</p>
     </footer>
 
     <script src="scripts.js"></script>
