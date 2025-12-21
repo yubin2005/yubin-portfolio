@@ -1,0 +1,147 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.work-section {
+  padding: 64px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+}
+
+.work-heading {
+  margin: 0 auto 16px;
+  font-size: 1.5em;
+  color: #0f3d66;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 12px 0 12px 18px;
+  border-left: 2px solid #d6e2ef;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 14px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 0 0 4px rgba(15, 61, 102, 0.08);
+}
+
+.timeline-text {
+  text-align: left;
+}
+
+.timeline-meta {
+  margin: 0 0 4px;
+  font-size: 0.95em;
+  color: #4a6176;
+  letter-spacing: 0.2px;
+}
+
+.timeline-role {
+  margin: 0;
+  font-size: 1.2em;
+  color: #0f3d66;
+}
+
+.work-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 16px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #222;
+  text-align: left; 
+}
+
+.work-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.work-thumb {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.text-block {
+  padding: 0 8px;
+  text-align: left;
+}
+
+.work-name {
+  margin: 0 0 8px;
+  font-size: 1.3em;  
+  color: #007acc;
+}
+
+
+.work-desc {
+  margin: 0;
+  line-height: 1.5;   
+  color: #444;
+  max-height: none;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+@media (min-width: 768px) {
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 600px) {
+  .card-content {
+    flex-direction: row;
+  }
+  .work-thumb {
+    width: 40%;
+    height: auto;
+  }
+  .text-block {
+    width: 60%;
+  }
+}
