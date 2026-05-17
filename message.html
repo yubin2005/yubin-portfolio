@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yubin Li | Contact</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="yubin.png">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
@@ -17,15 +16,16 @@
   <nav class="custom-nav">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="experiences.html">Experiences</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="message.html">Message</a></li>
+      <li><a href="experiences.html">Experience</a></li>
+      <li><a href="resume.html">CV</a></li>
+      <li><a href="message.html" aria-current="page">Contact</a></li>
     </ul>
   </nav>
 
   <section id="contact-section">
     <div class="contact-container">
-      <h1 class="contact-title">Get in Touch</h1>
+      <h1 class="contact-title">Contact</h1>
+      <p class="contact-note">For project, internship, or collaboration inquiries, please use the form below or email me directly.</p>
       <div class="message-container">
         <form
           id="contactForm"
@@ -34,8 +34,9 @@
           class="contact-form"
         >
           <div class="form-group">
-            <label class="form-label">Full Name</label>
+            <label class="form-label" for="name">Full Name</label>
             <input
+              id="name"
               class="form-input"
               type="text"
               name="name"
@@ -45,8 +46,9 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label">Email</label>
+            <label class="form-label" for="email">Email</label>
             <input
+              id="email"
               class="form-input"
               type="email"
               name="email"
@@ -56,8 +58,9 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label">Message</label>
+            <label class="form-label" for="message">Message</label>
             <textarea
+              id="message"
               class="form-textarea"
               name="message"
               required
@@ -79,7 +82,7 @@
   </section>
 
   <footer>
-    <p> Made with ❤️ by Yubin.</p>
+    <p>© 2026 Yubin Li.</p>
   </footer>
 
   <script src="scripts.js"></script>

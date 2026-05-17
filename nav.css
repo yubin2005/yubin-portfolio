@@ -1,32 +1,50 @@
 .custom-nav {
   display: flex;
-  justify-content: center;
-  margin-top: 45px;
+  justify-content: flex-start;
+  max-width: 980px;
+  margin: 30px auto 0;
+  padding: 0 24px 14px;
+  border-bottom: 1px solid var(--rule);
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .custom-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-  padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 18px;
+  flex-wrap: wrap;
 }
+
 .custom-nav ul li {
   display: inline-block;
 }
+
 .custom-nav ul li a {
   text-decoration: none;
-  color: #444;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
 }
+
 .custom-nav ul li a:hover {
-  background: #007acc;
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.custom-nav ul li a[aria-current="page"] {
+  color: var(--ink);
+}
+
+@media (max-width: 560px) {
+  .custom-nav {
+    margin-top: 20px;
+  }
+
+  .custom-nav ul {
+    gap: 12px 16px;
+  }
 }
